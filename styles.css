@@ -1,0 +1,54 @@
+body{
+    background-image: url(fotos/devu__-datsun-collor-corection.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color:white
+}
+
+.contenedor{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.degradado{
+    background-color: rgba(104, 76, 124, 0.473);
+    border: none;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.enbloque{
+    display: block;
+    margin: 10px auto 10px auto;
+    width: 95%;
+
+}
+
+.label{
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.conduccion{
+    margin-bottom: 1px;
+}
+.radio{
+    margin-top: 15px;
+    padding-top: auto;
+    padding-bottom: auto;
+    
+}
+
+.comentarios{
+
+    padding-left: 1px;
+}
+.cajaComentario{
+    margin-left: 35%;
+    /* margin-right: 50%; */
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="titulo">FreeCodeCamp Survey Form</h1>
+    <p class="titulo">Gracias por tomarte tu tiempo y completar nuestra pequeña encuesta.</p>
+    <section>
+        <form class="contenedor">
+
+            <!-- Datos personales -->
+
+            <fieldset class="degradado">
+                <label for="name" >
+                    Nombre completo 
+                    <input 
+                        type="text" 
+                        class="enbloque"
+                        placeholder="Coloque su nombre aqui"
+                        required
+                        maxlength="25"
+                        id="name"
+                    >
+                </label>
+                <label for="last-name" >
+                    Apellido 
+                    <input
+                        type="text" 
+                        class="enbloque"
+                        placeholder="Coloque su apellido aqui"
+                        required
+                        maxlength="25"
+                        id="last-name"
+                    >
+                </label>
+                <label for="mail" >
+                    Email 
+                    <input
+                        type="email" 
+                        class="enbloque"
+                        placeholder="Coloque su correo electronico aqui"
+                        required
+                        id="mail"
+                    >
+                </label>
+                <label for="cell" > 
+                    Telefono 
+                    <input 
+                        type="number" 
+                        class="enbloque"
+                        placeholder="Coloque su telefono aqui"
+                        required
+                        id="cell"
+                    >
+                </label>
+                <label for="edad" >
+                    Edad (opcional) 
+                    <input
+                        type="number" 
+                        class="enbloque"
+                        placeholder="Coloque su Edad aqui"
+                        id="edad"
+                        min="18"
+                    >
+                </label>
+            </fieldset>
+
+                <!-- Seccion de gustos -->
+
+            <fieldset class="degradado" >
+                <label for="opciones" >
+                    Cual es el auto que te gustaria conducir:
+                    <select name="gustoAuto" id="opciones" required>
+                        <option></option>
+                        <option value="1">Monoplaza de F1</option>
+                        <option value="2">Categoria B de WRC</option>
+                        <option value="3">JDM</option>
+                        <option value="4">Europeos</option>
+                        <option value="5">Americanos</option>
+                        <option value="6">Prefiero no decirlo</option>
+                        <option value="7">Otros</option>
+                    </select>
+                </label>
+                <p class="conduccion">Conducirias en alguna carrera si tuvieras oportunidad?</p>
+                <div class="radio">
+                    <label class="label" for="carrera1">
+                        <input type="radio"  id="carrera1" name="conducir" value="si" checked> Si 
+                    </label>
+                    <label class="label" for="carrera2">
+                        <input type="radio"  id="carrera2" name="conducir" value="no"> No
+                    </label>
+                    <label class="label" for="carrera3">
+                        <input type="radio"  id="carrera3" name="conducir" value="tv"> Tal vez  
+                    </label> 
+                </div>
+                <label for="estilo" > Que es lo que te gusta de los autos?
+                    <select name="estilo" id="estilo">
+                        <option></option>
+                        <option value="estitica">Su Estetica</option>
+                        <option value="potencia">Su Potencia</option>
+                        <option value="confort">El confort</option>
+                        <option value="sonido">Su Sonido</option>
+                    </select>    
+                </label>
+            </fieldset>
+            <fieldset class="degradado" >
+                <p>Que aspecto de tu auto te gustaria mejorar?</p>
+                <label for="estetica">
+                    <input type="checkbox" id="estetica" value="mEstetica"> Su Estetica
+                </label>
+                <label class="label" for="potencia">
+                    <input type="checkbox" id="potencia" value="mPotencia"> Su Potencia
+                </label>
+                <label class="label" for="confort">    
+                    <input type="checkbox" id="confort" value="mConfort"> Su Confort
+                </label>
+                <label class="label" for="comportamiento">
+                    <input type="checkbox" id="comportamiento" value="mComportamiento"> Su Comportamiento 
+                </label>
+                <label class="label" for="nada" >
+                    <input type="checkbox" id="nada" value="mNada"> Nada 
+                </label>
+                <div class="comentarios">
+                    <p>Algun comentario que quieras dejar sobre los autos?</p>
+                    <label for="" class="cajaComentario">
+                        <textarea></textarea>
+                </label>
+                </div>
+            </fieldset>
+            <input type="submit">
+        </form>
+    </section>
+</body>
+</html>
